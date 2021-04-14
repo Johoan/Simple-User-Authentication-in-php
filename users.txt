@@ -1,0 +1,3 @@
+{"firstname":"juli","lastname":"ben","email":"bhgrace32@gmail.com","password":"myt","confirmPass":"myt"}
+{"firstname":"ken","lastname":"bruce","email":"nye@han.co","password":"mnb","confirmPass":"mnb"}
+{"firstname":"BenBern","lastname":"Nerd","email":"joe@gmail.com","password":"000"}
