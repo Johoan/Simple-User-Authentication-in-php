@@ -11,7 +11,7 @@ session_start();
 
 <h1> My Home Page</h1>
 
-<button>Logout</button>
+<button><a href="login.php" style="text-decoration: none;">Logout</a></button>
 
 </body>
 
