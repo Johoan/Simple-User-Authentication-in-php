@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 if(isset($_POST['login'])){
 
@@ -19,13 +19,18 @@ While(!feof($login_handle)) {
 
     $user = json_decode(fgets($login_handle), true);
 
-    if($_SESSION($info_array["email"]) == $login_array['email']  && $_SESSION($info_array["password"]) == $login_array['password']){
+    if(isset($user) && $login_array['email'] == $user['email']  && $login_array['password'] == $user['password']){
 
         echo "Login Successful";
 
     } else {
-        echo "invalid input";
+        echo "Invalid Input!";
     }
+
+    /*echo "<pre>";
+    print_r($user);
+    echo "</pre>";
+    */
 }
 }
  
@@ -50,7 +55,7 @@ While(!feof($login_handle)) {
                     <br><br>
                     <button type="submit" name="login">Login</button>
                     <br><br>
-                    <span><em>forgot password</em></span>
+                    <span><em>forgot password?</em></span>
                 
                 </fieldset>
                 
