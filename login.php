@@ -21,7 +21,8 @@ While(!feof($login_handle)) {
 
     if(isset($user) && $login_array['email'] == $user['email']  && $login_array['password'] == $user['password']){
 
-        echo "Login Successful";
+        $_SESSION['login_user'] = $user;
+        header('location: home.php');
 
     } else {
         echo "Invalid Input!";
