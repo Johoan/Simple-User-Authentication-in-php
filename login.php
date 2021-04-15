@@ -56,7 +56,7 @@ While(!feof($login_handle)) {
                     <br><br>
                     <button type="submit" name="login">Login</button>
                     <br><br>
-                    <span><em>forgot password?</em></span>
+                    <a href="reset.php"><em>forgot password?</em></a>
                 
                 </fieldset>
                 
